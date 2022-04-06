@@ -4,7 +4,18 @@
 # * Configuration options: https://jekyllrb.com/docs/configuration/options/
 # * Default configuration values: https://jekyllrb.com/docs/configuration/default/
 
-title: Scarlet Hawk
+# Custom `author` property
+
+author:
+  name: &name Scarlet Hawk
+  email: scarlet.hawk@iit.example.edu
+  github: https://github.com/scarlet_hawk
+  navigation:
+    - index.md
+    - resume.md
+    - about.md
+
+title: *name
 
 # Set this to match your GitHub repo name if not working with <username>.github.io
 # You'll have to preview it at http://localhost:4000/<REPO_NAME>/
