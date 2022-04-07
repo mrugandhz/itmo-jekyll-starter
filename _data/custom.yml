@@ -3,9 +3,9 @@
 # Custom `author` property
 
 author:
-  name: &name Scarlet Hawk
+  name: &name Mrugandh Zodape
   email: scarlet.hawk@iit.example.edu
-  github: https://github.com/scarlet_hawk
+  github: https://github.com/mrugandhz
 
 # Replacement for `site.title`, from `_config.yml`
 # Reference `site.data.custom.title` instead
