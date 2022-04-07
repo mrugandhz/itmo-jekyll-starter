@@ -33,16 +33,19 @@
   {{ content }}
 
   <footer id="footer">
+
     {%- comment -%}
       Sneaky workaround to inject custom values into other YAML data; see
       https://shopify.github.io/liquid/filters/replace/
     {%- endcomment -%}
+
     {%- capture year -%}{{ 'now' | date: "%Y" }}{%- endcapture -%}
     {{ site.data.microcopy.footer
       | replace: "!AUTHOR_NAME!", site.data.custom.author.name
       | replace: "!YEAR!", year
       | markdownify
     }}
+
   </footer>
 
 </body>
