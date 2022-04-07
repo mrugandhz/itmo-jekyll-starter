@@ -11,8 +11,10 @@ author:
 # Reference `site.data.custom.title` instead
 title: *name
 
-# For use with the navigation include in `_includes/`
-navigation:
-  - index.md
-  - resume.md
-  - about.md
+# Uncomment to use with the navigation include in `_includes/`
+# Pages will be listed in the order shown here:
+
+#navigation:
+#  - index.md
+#  - resume.md
+#  - about.md

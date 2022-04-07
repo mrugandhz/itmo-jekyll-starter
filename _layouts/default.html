@@ -23,14 +23,11 @@
 
   <header id="header">
     <h1><a href="{{ "/" | absolute_url }}">{{ site.data.custom.title }}</a></h1>
-    <nav id="navigation">
-      <ul>
-      {% for file in site.data.custom.navigation %}
-        {%- assign nav = site.pages | where: "name", file -%}
-        {% for item in nav %}<li><a href="{{ item.url }}">{{ item.title }}</a></li>{% endfor %}
-      {% endfor %}
-      </ul>
-    </nav>
+
+    {%- if site.data.custom.navigation -%}
+    {% include navigation.html %}
+    {% endif %}
+
   </header>
 
   {{ content }}
