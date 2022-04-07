@@ -11,11 +11,11 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta property="og:title" content="{{ page.title }}: {{ site.data.custom.title }}" />
   <meta property="og:type" content="website" />
-  {%- if page.og.description -%}
+  {% if page.og.description %}
   <meta property="og:description" content="{{ page.og.description }}" />
   {%- endif -%}
-  {%- if page.og.image -%}
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}assets/img/{{ page.og.image.file }}" />
+  {% if page.og.image %}
+  <meta property="og:image" content="{{ "/assets/img/" | absolute_url }}{{ page.og.image.file }}" />
   <meta property="og:image:type" content="{{ page.og.image.type }}" />
   {% endif %}
 </head>
