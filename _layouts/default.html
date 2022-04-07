@@ -24,7 +24,7 @@
   <header id="header">
     <h1><a href="{{ "/" | absolute_url }}">{{ site.data.custom.title }}</a></h1>
 
-    {%- if site.data.custom.navigation -%}
+    {% if site.data.custom.navigation %}
     {% include navigation.html %}
     {% endif %}
 
