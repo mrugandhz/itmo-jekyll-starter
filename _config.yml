@@ -19,3 +19,4 @@ safe: true
 exclude:
   - .keep
   - Gemfile*
+  - README.md
